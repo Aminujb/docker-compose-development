@@ -1,0 +1,4 @@
+STANDUP_COLLECTION: "standups"
+DATABASE_NAME: "daily-standup"
+DATABASE_ADDRESS: "mongodb://mongo-dbh:27017"
+PORT: ":8000"

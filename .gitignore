@@ -1,0 +1,13 @@
+daily-standup-backend/.vscode
+
+daily-standup-frontend/node_modules
+daily-standup-frontend/.pnp
+daily-standup-frontend/.pnp.js
+
+# production
+daily-standup-frontend/build
+
+daily-standup-frontend/npm-debug.log*
+daily-standup-frontend/yarn-debug.log*
+daily-standup-frontend/yarn-error.log*
+
