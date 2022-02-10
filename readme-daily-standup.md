@@ -6,4 +6,4 @@
 To rebuild images run `docker-compose up --build`
 
 Once all containers are running successfully
-Open [http://localhost:4001](http://localhost:4001) to view the frontend in your browser.
+Open [http://localhost:3051](http://localhost:3051) to view the frontend in your browser.

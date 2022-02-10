@@ -4,8 +4,6 @@ services:
     hostname: mongo-dbh
     container_name: daily-standup-db
     image: mongo
-    ports:
-      - "27017:27017"
     volumes:
       - "mongodata:/data/db"
     networks:
@@ -17,8 +15,6 @@ services:
     container_name: daily-standup-backend
     depends_on:
         - database
-    ports:
-        - '8000:8000'
     networks:
       - network1
       - network2
@@ -28,8 +24,6 @@ services:
     container_name: daily-standup-frontend
     depends_on:
         - backend
-    ports:
-        - '4001:3000'
     networks:
       - network2
 
@@ -37,7 +31,7 @@ services:
     container_name: daily-standup-proxy
     build: ./daily-standup-frontend/nginx/
     ports:
-      - "3050:80"
+      - "3051:80"
     restart: always
     depends_on:
         - frontend
